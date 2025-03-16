@@ -24,6 +24,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Part 2 - Regression/Section 6 - Polynomial Regression/Python/Position_Salaries.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Part 2 - Regression/Section 7 - Support Vector Regression (SVR)/Python/Position_Salaries.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Part 1 - Data Preprocessing\Section 2 -------------------- Part 1 - Data Preprocessing --------------------\Python\Data.csv">
           <value>
             <Attribute>
