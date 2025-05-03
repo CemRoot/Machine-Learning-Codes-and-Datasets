@@ -38,6 +38,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="$USER_HOME$/Downloads/Machine Learning A-Z (Model Selection)/Classification/Data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Machine Learning A-Z (Model Selection)/Regression/Data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Part 1 - Data Preprocessing\Section 2 -------------------- Part 1 - Data Preprocessing --------------------\Python\Data.csv">
           <value>
             <Attribute>
