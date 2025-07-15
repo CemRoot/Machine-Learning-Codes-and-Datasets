@@ -38,14 +38,35 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="$USER_HOME$/Downloads/Machine Learning A-Z (Model Selection)/Classification/Data.csv">
+        <entry key="/Part 3 - Classification/Regression/Data.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="$USER_HOME$/Downloads/Machine Learning A-Z (Model Selection)/Regression/Data.csv">
+        <entry key="/Part 4 - Clustering/Section 24 - K-Means Clustering/Python/Mall_Customers.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Part 5 - Association Rule Learning/Section 28 - Apriori/Python/Market_Basket_Optimisation.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Part 5 - Association Rule Learning/Section 29 - Eclat/Python/Market_Basket_Optimisation.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Part 8 - Deep Learning/Section 39 - Artificial Neural Networks (ANN)/Python/Churn_Modelling.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
