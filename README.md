@@ -1,246 +1,731 @@
-# 📚 Machine Learning Codes and Datasets Repository
+# 🤖 Machine Learning Codes and Datasets
 
-### 🌐 Language Selection | Dil Seçimi
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
+![R](https://img.shields.io/badge/R-4.0+-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
+![Stars](https://img.shields.io/github/stars/CemRoot/Machine-Learning-Codes-and-Datasets?style=social)
+
+**A comprehensive collection of machine learning algorithms, datasets, and implementations**
+
 [English](#english) | [Türkçe](#turkce)
+
+</div>
 
 ---
 
 <a name="english"></a>
 
-## 🖥️ About This Repository (English)
+## 📋 Table of Contents
 
-Welcome to the **Machine Learning Codes and Datasets** repository! This repository is designed to help machine learning enthusiasts and professionals learn, practice, and apply various machine learning algorithms and techniques. Whether you're new to machine learning or have prior experience, you will find something useful here.
+- [Overview](#overview)
+- [Features](#features)
+- [Repository Structure](#repository-structure)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Algorithms Covered](#algorithms-covered)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-### What You Will Learn
-In this repository, you will learn:
-- How to implement common machine learning algorithms.
-- How to preprocess datasets for machine learning models.
-- How to use datasets in different formats.
-- How to optimize models for better accuracy.
+## 🎯 Overview
 
-### 📁 Repository Structure and Contents
-This repository is organized into 11 main parts, each focusing on different aspects of machine learning:
+Welcome to the **Machine Learning Codes and Datasets** repository! This comprehensive resource is designed for machine learning practitioners, students, and enthusiasts who want to learn, practice, and master various ML algorithms and techniques.
 
-1. **Part 0 - Welcome to Machine Learning A-Z**
-   - Introduction materials to machine learning concepts
-   - Setup guides and initial resources
+### 🎓 What You Will Learn
 
-2. **Part 1 - Data Preprocessing**
-   - **Available Code**: 
-     - Python: Data preprocessing templates, preprocessing tools
-     - R: Data preprocessing templates, preprocessing tools
-   - **Datasets**: Sample datasets for preprocessing practice
-   - **Key Topics**: Feature scaling, handling missing data, encoding categorical data
+- ✅ Implementation of **40+ machine learning algorithms** from scratch
+- ✅ Data preprocessing and feature engineering techniques
+- ✅ Model evaluation and performance optimization
+- ✅ Deep learning with neural networks
+- ✅ Natural language processing fundamentals
+- ✅ Dimensionality reduction methods
+- ✅ Best practices in machine learning workflows
 
-3. **Part 2 - Regression**
-   - **Available Code**: 
-     - Multiple regression models (Simple Linear, Multiple Linear, Polynomial)
-     - Support Vector Regression, Decision Tree Regression, Random Forest
-   - **Datasets**: Salary data, position level data
-   - **Key Topics**: Regression model evaluation, feature selection
+## ⭐ Features
 
-4. **Part 3 - Classification**
-   - **Available Code**: 
-     - Logistic Regression, K-NN, SVM
-     - Kernel SVM, Naive Bayes, Decision Tree Classification
-     - Random Forest Classification
-   - **Datasets**: Social Network Ad data, customer segmentation data
-   - **Key Topics**: Classification metrics, confusion matrix, accuracy evaluation
+- 📚 **Comprehensive Coverage**: 11 major ML domains with 40+ algorithms
+- 💻 **Dual Language Support**: Python and R implementations
+- 📊 **Real-world Datasets**: Curated datasets for each algorithm
+- 📝 **Interactive Notebooks**: Jupyter notebooks with detailed explanations
+- 🔬 **Production-ready Code**: Clean, documented, and modular code
+- 🎨 **Visualization**: Beautiful plots and charts for better understanding
+- 🌍 **Bilingual Documentation**: Full English and Turkish support
 
-5. **Part 4 - Clustering**
-   - **Available Code**: 
-     - K-Means Clustering, Hierarchical Clustering
-   - **Datasets**: Mall customer data, hierarchical clustering datasets
-   - **Key Topics**: Finding optimal number of clusters, evaluating cluster quality
+## 📁 Repository Structure
 
-6. **Part 5 - Association Rule Learning**
-   - **Available Code**: 
-     - Apriori, Eclat algorithms
-   - **Datasets**: Market Basket data
-   - **Key Topics**: Support, confidence, lift metrics
+```
+Machine-Learning-Codes-and-Datasets/
+│
+├── Part 1 - Data Preprocessing/
+│   └── Data cleaning, transformation, and feature scaling
+│
+├── Part 2 - Regression/
+│   ├── Simple Linear Regression
+│   ├── Multiple Linear Regression
+│   ├── Polynomial Regression
+│   ├── Support Vector Regression (SVR)
+│   ├── Decision Tree Regression
+│   └── Random Forest Regression
+│
+├── Part 3 - Classification/
+│   ├── Logistic Regression
+│   ├── K-Nearest Neighbors (K-NN)
+│   ├── Support Vector Machine (SVM)
+│   ├── Kernel SVM
+│   ├── Naive Bayes
+│   ├── Decision Tree Classification
+│   └── Random Forest Classification
+│
+├── Part 4 - Clustering/
+│   ├── K-Means Clustering
+│   └── Hierarchical Clustering
+│
+├── Part 5 - Association Rule Learning/
+│   ├── Apriori Algorithm
+│   └── Eclat Algorithm
+│
+├── Part 6 - Reinforcement Learning/
+│   ├── Upper Confidence Bound (UCB)
+│   └── Thompson Sampling
+│
+├── Part 7 - Natural Language Processing/
+│   └── Text preprocessing and sentiment analysis
+│
+├── Part 8 - Deep Learning/
+│   ├── Artificial Neural Networks (ANN)
+│   └── Convolutional Neural Networks (CNN)
+│
+├── Part 9 - Dimensionality Reduction/
+│   ├── Principal Component Analysis (PCA)
+│   ├── Linear Discriminant Analysis (LDA)
+│   └── Kernel PCA
+│
+├── Part 10 - Model Selection & Boosting/
+│   ├── k-Fold Cross Validation
+│   ├── Grid Search
+│   └── XGBoost
+│
+└── ML_cheatsheet.pdf
+```
 
-7. **Part 6 - Reinforcement Learning**
-   - **Available Code**: 
-     - Upper Confidence Bound, Thompson Sampling
-   - **Datasets**: Ad click-through rate data
-   - **Key Topics**: Exploration vs exploitation, bandit algorithms
+## 🔧 Prerequisites
 
-8. **Part 7 - Natural Language Processing**
-   - **Available Code**: 
-     - Text preprocessing, Bag of Words model
-   - **Datasets**: Restaurant reviews dataset
-   - **Key Topics**: Text cleaning, sentiment analysis, tokenization
+Before you begin, ensure you have the following installed:
 
-9. **Part 8 - Deep Learning**
-   - **Available Code**: 
-     - Artificial Neural Networks, Convolutional Neural Networks
-   - **Datasets**: Customer churn data, image datasets
-   - **Key Topics**: Network architecture, activation functions, training deep models
+- **Python**: 3.7 or higher
+- **R**: 4.0 or higher (optional, for R implementations)
+- **pip**: Python package manager
+- **Git**: Version control system
 
-10. **Part 9 - Dimensionality Reduction**
-    - **Available Code**: 
-      - PCA, LDA, Kernel PCA
-    - **Datasets**: Wine dataset, breast cancer dataset
-    - **Key Topics**: Feature extraction, variance explained ratio
+### Required Knowledge
 
-11. **Part 10 - Model Selection and Boosting**
-    - **Available Code**: 
-      - k-Fold Cross Validation, Grid Search
-      - XGBoost
-    - **Datasets**: Various datasets for model evaluation
-    - **Key Topics**: Hyperparameter tuning, ensemble methods
+- Basic understanding of Python programming
+- Fundamentals of linear algebra and statistics
+- Familiarity with NumPy and Pandas (recommended)
 
-Additionally, you'll find:
-- **ML_cheatsheet.pdf**: A comprehensive cheat sheet for machine learning concepts and implementations
+## 🚀 Installation
 
-### 🛠️ Tools & Technologies
-- Python 🐍
-- R
-- Libraries: Scikit-learn, Pandas, Numpy, Matplotlib, TensorFlow, Keras
-- Jupyter Notebooks for easy interaction and visualization
+### Step 1: Clone the Repository
 
-### 🚀 How to Get Started
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/CemRoot/Machine-Learning-Codes-and-Datasets.git
-    ```
-2. **Install dependencies**:
-    Open the terminal and navigate to the repository folder, then run:
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+git clone https://github.com/CemRoot/Machine-Learning-Codes-and-Datasets.git
+cd Machine-Learning-Codes-and-Datasets
+```
 
-3. **Run the Jupyter Notebooks or Python files**:
-    Open Jupyter Notebook in the terminal or use any IDE like VSCode or PyCharm to run Python files.
+### Step 2: Create a Virtual Environment (Recommended)
 
-### 👥 Contributions
-Feel free to open issues or pull requests to contribute to this repository! We welcome improvements to the code, new datasets, or additional machine learning techniques.
+```bash
+# For Python venv
+python -m venv ml_env
+source ml_env/bin/activate  # On Windows: ml_env\Scripts\activate
 
-If you find this repository helpful, **star** ⭐ and **follow** us!
+# OR using Conda
+conda create -n ml_env python=3.9
+conda activate ml_env
+```
+
+### Step 3: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+## 💡 Usage
+
+### Quick Start Example
+
+Here's a simple example of using linear regression from this repository:
+
+```python
+# Import required libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+
+# Load dataset
+dataset = pd.read_csv('Salary_Data.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+
+# Split dataset
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+
+# Train model
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
+
+# Make predictions
+y_pred = regressor.predict(X_test)
+
+# Visualize results
+plt.scatter(X_test, y_test, color='red')
+plt.plot(X_test, y_pred, color='blue')
+plt.title('Salary vs Experience')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
+```
+
+### Running Individual Algorithms
+
+Navigate to the specific algorithm directory and run the Python script or Jupyter notebook:
+
+```bash
+# Example: Running K-Means Clustering
+cd "Part 4 - Clustering/Section 24 - K-Means Clustering/Python"
+python k_means_clustering.py
+
+# Or open the Jupyter notebook
+jupyter notebook k_means_clustering.ipynb
+```
+
+## 🧠 Algorithms Covered
+
+<details>
+<summary><b>Part 1: Data Preprocessing</b></summary>
+
+- Handling Missing Data
+- Encoding Categorical Data
+- Feature Scaling (Standardization & Normalization)
+- Train/Test Split
+
+</details>
+
+<details>
+<summary><b>Part 2: Regression (6 Algorithms)</b></summary>
+
+- Simple Linear Regression
+- Multiple Linear Regression
+- Polynomial Regression
+- Support Vector Regression (SVR)
+- Decision Tree Regression
+- Random Forest Regression
+
+</details>
+
+<details>
+<summary><b>Part 3: Classification (7 Algorithms)</b></summary>
+
+- Logistic Regression
+- K-Nearest Neighbors (K-NN)
+- Support Vector Machine (SVM)
+- Kernel SVM
+- Naive Bayes
+- Decision Tree Classification
+- Random Forest Classification
+
+</details>
+
+<details>
+<summary><b>Part 4: Clustering (2 Algorithms)</b></summary>
+
+- K-Means Clustering
+- Hierarchical Clustering
+
+</details>
+
+<details>
+<summary><b>Part 5: Association Rule Learning (2 Algorithms)</b></summary>
+
+- Apriori
+- Eclat
+
+</details>
+
+<details>
+<summary><b>Part 6: Reinforcement Learning (2 Algorithms)</b></summary>
+
+- Upper Confidence Bound (UCB)
+- Thompson Sampling
+
+</details>
+
+<details>
+<summary><b>Part 7: Natural Language Processing</b></summary>
+
+- Bag of Words Model
+- Text Preprocessing
+- Sentiment Analysis
+
+</details>
+
+<details>
+<summary><b>Part 8: Deep Learning (2 Types)</b></summary>
+
+- Artificial Neural Networks (ANN)
+- Convolutional Neural Networks (CNN)
+
+</details>
+
+<details>
+<summary><b>Part 9: Dimensionality Reduction (3 Algorithms)</b></summary>
+
+- Principal Component Analysis (PCA)
+- Linear Discriminant Analysis (LDA)
+- Kernel PCA
+
+</details>
+
+<details>
+<summary><b>Part 10: Model Selection & Boosting</b></summary>
+
+- k-Fold Cross Validation
+- Grid Search for Hyperparameter Tuning
+- XGBoost
+
+</details>
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) | Primary programming language |
+| ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white) | Numerical computing |
+| ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white) | Data manipulation |
+| ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat&logo=scikit-learn&logoColor=white) | Machine learning algorithms |
+| ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white) | Deep learning framework |
+| ![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white) | Neural networks API |
+| ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat) | Data visualization |
+| ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white) | Interactive notebooks |
+| ![R](https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white) | Statistical computing |
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Here's how you can help:
+
+1. **Fork** the repository
+2. **Create** a new branch (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. **Open** a Pull Request
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+### Ways to Contribute
+
+- 🐛 Report bugs and issues
+- 💡 Suggest new features or algorithms
+- 📝 Improve documentation
+- 🧪 Add new datasets
+- ✨ Enhance existing implementations
+- 🌍 Translate documentation
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Inspired by various machine learning courses and resources
+- Thanks to all contributors who have helped improve this repository
+- Special thanks to the open-source ML community
+
+## 📞 Contact & Support
+
+- **Repository**: [GitHub](https://github.com/CemRoot/Machine-Learning-Codes-and-Datasets)
+- **Issues**: [Report a Bug](https://github.com/CemRoot/Machine-Learning-Codes-and-Datasets/issues)
+- **Discussions**: [Join the Discussion](https://github.com/CemRoot/Machine-Learning-Codes-and-Datasets/discussions)
+
+---
+
+<div align="center">
+
+### ⭐ Star this repository if you find it helpful!
+
+If this repository helped you in your machine learning journey, please consider giving it a star ⭐
+
+**Happy Learning! 🚀**
+
+</div>
 
 ---
 
 <a name="turkce"></a>
 
-## 🖥️ Hakkında (Türkçe)
+## 🇹🇷 Türkçe Dokümantasyon
 
-**Makine Öğrenmesi Kodları ve Veri Setleri** deposuna hoş geldiniz! Bu depo, makine öğrenimi meraklıları ve profesyonelleri için çeşitli algoritmaları ve teknikleri öğrenmelerini, uygulamalarını ve pratik yapmalarını sağlamak amacıyla oluşturulmuştur. Makine öğrenmesine yeni başladıysanız ya da deneyimliyseniz, burada size uygun bir şeyler bulacaksınız.
+## 📋 İçindekiler
 
-### Neler Öğreneceksiniz
-Bu depoda şunları öğreneceksiniz:
-- Yaygın makine öğrenmesi algoritmalarını nasıl uygulayacağınızı.
-- Veri setlerini makine öğrenmesi modelleri için nasıl ön işlemeden geçireceğinizi.
-- Farklı formatlardaki veri setlerini nasıl kullanacağınızı.
-- Modelleri daha yüksek doğruluk için nasıl optimize edeceğinizi.
+- [Genel Bakış](#genel-bakış)
+- [Özellikler](#özellikler)
+- [Depo Yapısı](#depo-yapısı)
+- [Gereksinimler](#gereksinimler)
+- [Kurulum](#kurulum)
+- [Kullanım](#kullanım)
+- [Kapsanan Algoritmalar](#kapsanan-algoritmalar)
+- [Katkıda Bulunma](#katkıda-bulunma)
+- [Lisans](#lisans)
 
-### 📁 Depo Yapısı ve İçerikler
-Bu depo, makine öğrenmesinin farklı yönlerine odaklanan 11 ana bölümden oluşmaktadır:
+## 🎯 Genel Bakış
 
-1. **Bölüm 0 - Makine Öğrenmesi A-Z'ye Hoş Geldiniz**
-   - Makine öğrenmesi kavramlarına giriş materyalleri
-   - Kurulum kılavuzları ve başlangıç kaynakları
+**Makine Öğrenmesi Kodları ve Veri Setleri** deposuna hoş geldiniz! Bu kapsamlı kaynak, makine öğrenmesi uygulayıcıları, öğrenciler ve meraklıları için çeşitli ML algoritmalarını ve tekniklerini öğrenmek, pratik yapmak ve ustalaşmak için tasarlanmıştır.
 
-2. **Bölüm 1 - Veri Ön İşleme**
-   - **Mevcut Kodlar**: 
-     - Python: Veri ön işleme şablonları, ön işleme araçları
-     - R: Veri ön işleme şablonları, ön işleme araçları
-   - **Veri Setleri**: Ön işleme pratiği için örnek veri setleri
-   - **Ana Konular**: Özellik ölçeklendirme, eksik verileri işleme, kategorik verileri kodlama
+### 🎓 Neler Öğreneceksiniz
 
-3. **Bölüm 2 - Regresyon**
-   - **Mevcut Kodlar**: 
-     - Çoklu regresyon modelleri (Basit Doğrusal, Çoklu Doğrusal, Polinom)
-     - Destek Vektör Regresyonu, Karar Ağacı Regresyonu, Rastgele Orman
-   - **Veri Setleri**: Maaş verileri, pozisyon seviyesi verileri
-   - **Ana Konular**: Regresyon modeli değerlendirmesi, özellik seçimi
+- ✅ **40+ makine öğrenmesi algoritmasının** sıfırdan implementasyonu
+- ✅ Veri ön işleme ve özellik mühendisliği teknikleri
+- ✅ Model değerlendirme ve performans optimizasyonu
+- ✅ Sinir ağları ile derin öğrenme
+- ✅ Doğal dil işleme temelleri
+- ✅ Boyut azaltma yöntemleri
+- ✅ Makine öğrenmesi iş akışlarında en iyi uygulamalar
 
-4. **Bölüm 3 - Sınıflandırma**
-   - **Mevcut Kodlar**: 
-     - Lojistik Regresyon, K-NN, SVM
-     - Kernel SVM, Naive Bayes, Karar Ağacı Sınıflandırması
-     - Rastgele Orman Sınıflandırması
-   - **Veri Setleri**: Sosyal Ağ Reklamı verileri, müşteri segmentasyon verileri
-   - **Ana Konular**: Sınıflandırma metrikleri, karışıklık matrisi, doğruluk değerlendirmesi
+## ⭐ Özellikler
 
-5. **Bölüm 4 - Kümeleme**
-   - **Mevcut Kodlar**: 
-     - K-Means Kümeleme, Hiyerarşik Kümeleme
-   - **Veri Setleri**: AVM müşteri verileri, hiyerarşik kümeleme veri setleri
-   - **Ana Konular**: Optimal küme sayısını bulma, küme kalitesini değerlendirme
+- 📚 **Kapsamlı Kapsam**: 40+ algoritma ile 11 ana ML alanı
+- 💻 **Çift Dil Desteği**: Python ve R implementasyonları
+- 📊 **Gerçek Dünya Veri Setleri**: Her algoritma için özenle seçilmiş veri setleri
+- 📝 **Etkileşimli Notebook'lar**: Detaylı açıklamalı Jupyter notebook'ları
+- 🔬 **Üretime Hazır Kod**: Temiz, dokümante edilmiş ve modüler kod
+- 🎨 **Görselleştirme**: Daha iyi anlama için güzel grafikler ve çizelgeler
+- 🌍 **İki Dilli Dokümantasyon**: Tam İngilizce ve Türkçe destek
 
-6. **Bölüm 5 - Birliktelik Kuralı Öğrenimi**
-   - **Mevcut Kodlar**: 
-     - Apriori, Eclat algoritmaları
-   - **Veri Setleri**: Market Sepeti verileri
-   - **Ana Konular**: Destek, güven, kaldırma metrikleri
+## 📁 Depo Yapısı
 
-7. **Bölüm 6 - Pekiştirmeli Öğrenme**
-   - **Mevcut Kodlar**: 
-     - Üst Güven Sınırı, Thompson Örneklemesi
-   - **Veri Setleri**: Reklam tıklama oranı verileri
-   - **Ana Konular**: Keşif ve sömürü dengesi, kumar algoritmaları
+```
+Machine-Learning-Codes-and-Datasets/
+│
+├── Part 1 - Veri Ön İşleme/
+│   └── Veri temizleme, dönüştürme ve özellik ölçeklendirme
+│
+├── Part 2 - Regresyon/
+│   ├── Basit Doğrusal Regresyon
+│   ├── Çoklu Doğrusal Regresyon
+│   ├── Polinom Regresyon
+│   ├── Destek Vektör Regresyonu (SVR)
+│   ├── Karar Ağacı Regresyonu
+│   └── Rastgele Orman Regresyonu
+│
+├── Part 3 - Sınıflandırma/
+│   ├── Lojistik Regresyon
+│   ├── K-En Yakın Komşu (K-NN)
+│   ├── Destek Vektör Makinesi (SVM)
+│   ├── Kernel SVM
+│   ├── Naive Bayes
+│   ├── Karar Ağacı Sınıflandırması
+│   └── Rastgele Orman Sınıflandırması
+│
+├── Part 4 - Kümeleme/
+│   ├── K-Means Kümeleme
+│   └── Hiyerarşik Kümeleme
+│
+├── Part 5 - Birliktelik Kuralı Öğrenimi/
+│   ├── Apriori Algoritması
+│   └── Eclat Algoritması
+│
+├── Part 6 - Pekiştirmeli Öğrenme/
+│   ├── Üst Güven Sınırı (UCB)
+│   └── Thompson Örneklemesi
+│
+├── Part 7 - Doğal Dil İşleme/
+│   └── Metin ön işleme ve duygu analizi
+│
+├── Part 8 - Derin Öğrenme/
+│   ├── Yapay Sinir Ağları (ANN)
+│   └── Evrişimli Sinir Ağları (CNN)
+│
+├── Part 9 - Boyut Azaltma/
+│   ├── Temel Bileşen Analizi (PCA)
+│   ├── Doğrusal Diskriminant Analizi (LDA)
+│   └── Kernel PCA
+│
+├── Part 10 - Model Seçimi ve Güçlendirme/
+│   ├── k-Katlı Çapraz Doğrulama
+│   ├── Izgara Araması
+│   └── XGBoost
+│
+└── ML_cheatsheet.pdf
+```
 
-8. **Bölüm 7 - Doğal Dil İşleme**
-   - **Mevcut Kodlar**: 
-     - Metin ön işleme, Kelime Çantası modeli
-   - **Veri Setleri**: Restoran yorumları veri seti
-   - **Ana Konular**: Metin temizleme, duygu analizi, belirteçleme
+## 🔧 Gereksinimler
 
-9. **Bölüm 8 - Derin Öğrenme**
-   - **Mevcut Kodlar**: 
-     - Yapay Sinir Ağları, Evrişimli Sinir Ağları
-   - **Veri Setleri**: Müşteri kayıp verileri, görüntü veri setleri
-   - **Ana Konular**: Ağ mimarisi, aktivasyon fonksiyonları, derin modellerin eğitimi
+Başlamadan önce, aşağıdakilerin yüklü olduğundan emin olun:
 
-10. **Bölüm 9 - Boyut Azaltma**
-    - **Mevcut Kodlar**: 
-      - PCA, LDA, Kernel PCA
-    - **Veri Setleri**: Şarap veri seti, meme kanseri veri seti
-    - **Ana Konular**: Özellik çıkarımı, açıklanan varyans oranı
+- **Python**: 3.7 veya üzeri
+- **R**: 4.0 veya üzeri (opsiyonel, R implementasyonları için)
+- **pip**: Python paket yöneticisi
+- **Git**: Versiyon kontrol sistemi
 
-11. **Bölüm 10 - Model Seçimi ve Güçlendirme**
-    - **Mevcut Kodlar**: 
-      - k-Katlı Çapraz Doğrulama, Izgara Araması
-      - XGBoost
-    - **Veri Setleri**: Model değerlendirmesi için çeşitli veri setleri
-    - **Ana Konular**: Hiperparametre ayarı, topluluk yöntemleri
+### Gerekli Bilgi
 
-Ek olarak, şunları bulacaksınız:
-- **ML_cheatsheet.pdf**: Makine öğrenmesi kavramları ve uygulamaları için kapsamlı bir el kitabı
+- Python programlama temel bilgisi
+- Lineer cebir ve istatistik temelleri
+- NumPy ve Pandas bilgisi (önerilir)
 
-### 🛠️ Araçlar ve Teknolojiler
-- Python 🐍
-- R
-- Kütüphaneler: Scikit-learn, Pandas, Numpy, Matplotlib, TensorFlow, Keras
-- Jupyter Notebooks ile etkileşimli çalışma ve görselleştirme
+## 🚀 Kurulum
 
-### 🚀 Başlangıç Adımları
-1. **Projeyi Klonlayın**:
-    ```bash
-    git clone https://github.com/CemRoot/Machine-Learning-Codes-and-Datasets.git
-    ```
-2. **Gereksinimleri yükleyin**:
-    Terminali açın ve depo klasörüne gidin, ardından:
-    ```bash
-    pip install -r requirements.txt
-    ```
+### Adım 1: Depoyu Klonlayın
 
-3. **Jupyter Notebooks veya Python dosyalarını çalıştırın**:
-    Terminalden Jupyter Notebook'u açın veya herhangi bir IDE (VSCode, PyCharm gibi) kullanarak Python dosyalarını çalıştırın.
+```bash
+git clone https://github.com/CemRoot/Machine-Learning-Codes-and-Datasets.git
+cd Machine-Learning-Codes-and-Datasets
+```
 
-### 👥 Katkıda Bulunma
-Bu depoya katkıda bulunmak için sorunlar açabilir veya pull request gönderebilirsiniz! Kod geliştirmeleri, yeni veri setleri veya ek makine öğrenmesi tekniklerini memnuniyetle karşılıyoruz.
+### Adım 2: Sanal Ortam Oluşturun (Önerilir)
 
-Eğer bu depoyu faydalı bulduysanız, **yıldızlayarak** ⭐ ve **takip ederek** destek olabilirsiniz!
+```bash
+# Python venv için
+python -m venv ml_env
+source ml_env/bin/activate  # Windows'ta: ml_env\Scripts\activate
+
+# VEYA Conda kullanarak
+conda create -n ml_env python=3.9
+conda activate ml_env
+```
+
+### Adım 3: Bağımlılıkları Yükleyin
+
+```bash
+pip install -r requirements.txt
+```
+
+### Adım 4: Jupyter Notebook'u Başlatın
+
+```bash
+jupyter notebook
+```
+
+## 💡 Kullanım
+
+### Hızlı Başlangıç Örneği
+
+Bu depodan lineer regresyon kullanımına dair basit bir örnek:
+
+```python
+# Gerekli kütüphaneleri içe aktarın
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+
+# Veri setini yükleyin
+dataset = pd.read_csv('Salary_Data.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+
+# Veri setini bölün
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+
+# Modeli eğitin
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
+
+# Tahmin yapın
+y_pred = regressor.predict(X_test)
+
+# Sonuçları görselleştirin
+plt.scatter(X_test, y_test, color='red')
+plt.plot(X_test, y_pred, color='blue')
+plt.title('Maaş vs Deneyim')
+plt.xlabel('Deneyim Yılı')
+plt.ylabel('Maaş')
+plt.show()
+```
+
+### Tekil Algoritmaları Çalıştırma
+
+Belirli bir algoritma dizinine gidin ve Python scriptini veya Jupyter notebook'unu çalıştırın:
+
+```bash
+# Örnek: K-Means Kümeleme çalıştırma
+cd "Part 4 - Clustering/Section 24 - K-Means Clustering/Python"
+python k_means_clustering.py
+
+# Veya Jupyter notebook'u açın
+jupyter notebook k_means_clustering.ipynb
+```
+
+## 🧠 Kapsanan Algoritmalar
+
+<details>
+<summary><b>Bölüm 1: Veri Ön İşleme</b></summary>
+
+- Eksik Verilerin İşlenmesi
+- Kategorik Verilerin Kodlanması
+- Özellik Ölçeklendirme (Standardizasyon ve Normalizasyon)
+- Eğitim/Test Ayrımı
+
+</details>
+
+<details>
+<summary><b>Bölüm 2: Regresyon (6 Algoritma)</b></summary>
+
+- Basit Doğrusal Regresyon
+- Çoklu Doğrusal Regresyon
+- Polinom Regresyon
+- Destek Vektör Regresyonu (SVR)
+- Karar Ağacı Regresyonu
+- Rastgele Orman Regresyonu
+
+</details>
+
+<details>
+<summary><b>Bölüm 3: Sınıflandırma (7 Algoritma)</b></summary>
+
+- Lojistik Regresyon
+- K-En Yakın Komşu (K-NN)
+- Destek Vektör Makinesi (SVM)
+- Kernel SVM
+- Naive Bayes
+- Karar Ağacı Sınıflandırması
+- Rastgele Orman Sınıflandırması
+
+</details>
+
+<details>
+<summary><b>Bölüm 4: Kümeleme (2 Algoritma)</b></summary>
+
+- K-Means Kümeleme
+- Hiyerarşik Kümeleme
+
+</details>
+
+<details>
+<summary><b>Bölüm 5: Birliktelik Kuralı Öğrenimi (2 Algoritma)</b></summary>
+
+- Apriori
+- Eclat
+
+</details>
+
+<details>
+<summary><b>Bölüm 6: Pekiştirmeli Öğrenme (2 Algoritma)</b></summary>
+
+- Üst Güven Sınırı (UCB)
+- Thompson Örneklemesi
+
+</details>
+
+<details>
+<summary><b>Bölüm 7: Doğal Dil İşleme</b></summary>
+
+- Kelime Çantası Modeli
+- Metin Ön İşleme
+- Duygu Analizi
+
+</details>
+
+<details>
+<summary><b>Bölüm 8: Derin Öğrenme (2 Tip)</b></summary>
+
+- Yapay Sinir Ağları (ANN)
+- Evrişimli Sinir Ağları (CNN)
+
+</details>
+
+<details>
+<summary><b>Bölüm 9: Boyut Azaltma (3 Algoritma)</b></summary>
+
+- Temel Bileşen Analizi (PCA)
+- Doğrusal Diskriminant Analizi (LDA)
+- Kernel PCA
+
+</details>
+
+<details>
+<summary><b>Bölüm 10: Model Seçimi ve Güçlendirme</b></summary>
+
+- k-Katlı Çapraz Doğrulama
+- Hiperparametre Ayarı için Izgara Araması
+- XGBoost
+
+</details>
+
+## 🤝 Katkıda Bulunma
+
+Topluluktan katkıları memnuniyetle karşılıyoruz! İşte nasıl yardımcı olabilirsiniz:
+
+1. Depoyu **Fork** edin
+2. Yeni bir branch **oluşturun** (`git checkout -b feature/HarikaBirOzellik`)
+3. Değişikliklerinizi **commit** edin (`git commit -m 'Harika bir özellik ekle'`)
+4. Branch'e **push** yapın (`git push origin feature/HarikaBirOzellik`)
+5. Bir Pull Request **açın**
+
+Davranış kurallarımız ve pull request gönderme süreci hakkında detaylar için lütfen [CONTRIBUTING.md](CONTRIBUTING.md) dosyasını okuyun.
+
+### Katkı Yolları
+
+- 🐛 Hata ve sorunları bildirin
+- 💡 Yeni özellikler veya algoritmalar önerin
+- 📝 Dokümantasyonu geliştirin
+- 🧪 Yeni veri setleri ekleyin
+- ✨ Mevcut implementasyonları iyileştirin
+- 🌍 Dokümantasyonu çevirin
+
+## 📄 Lisans
+
+Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
+
+## 🙏 Teşekkürler
+
+- Çeşitli makine öğrenmesi kursları ve kaynaklarından esinlenilmiştir
+- Bu depoyu geliştirmeye yardımcı olan tüm katkıda bulunanlara teşekkürler
+- Açık kaynak ML topluluğuna özel teşekkürler
+
+## 📞 İletişim ve Destek
+
+- **Depo**: [GitHub](https://github.com/CemRoot/Machine-Learning-Codes-and-Datasets)
+- **Sorunlar**: [Hata Bildirin](https://github.com/CemRoot/Machine-Learning-Codes-and-Datasets/issues)
+- **Tartışmalar**: [Tartışmaya Katılın](https://github.com/CemRoot/Machine-Learning-Codes-and-Datasets/discussions)
 
 ---
 
-## 📦 Releases
-No releases have been published yet. Stay tuned for future releases, where we will provide packaged versions of the projects with detailed descriptions.
+<div align="center">
+
+### ⭐ Faydalı bulduysanız bu depoyu yıldızlayın!
+
+Bu depo makine öğrenmesi yolculuğunuzda size yardımcı olduysa, lütfen bir yıldız vermeyi düşünün ⭐
+
+**Mutlu Öğrenmeler! 🚀**
+
+</div>
 
 ---
 
-## 🛠 License
-This repository is licensed under the MIT License. For more information, see the [LICENSE](LICENSE) file.
+## 📈 Project Stats
+
+![GitHub last commit](https://img.shields.io/github/last-commit/CemRoot/Machine-Learning-Codes-and-Datasets)
+![GitHub issues](https://img.shields.io/github/issues/CemRoot/Machine-Learning-Codes-and-Datasets)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/CemRoot/Machine-Learning-Codes-and-Datasets)
+![GitHub forks](https://img.shields.io/github/forks/CemRoot/Machine-Learning-Codes-and-Datasets?style=social)
 
 ---
+
+<div align="center">
+
+**Made with ❤️ for the Machine Learning Community**
+
+</div>
