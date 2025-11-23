@@ -157,4 +157,82 @@ cython_debug/
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+.idea/
+
+# ===== Machine Learning Specific =====
+
+# Model files
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.pb
+saved_model/
+checkpoints/
+models/
+
+# TensorFlow/Keras
+logs/
+tensorboard/
+*.tfevents.*
+*.tflite
+
+# Datasets (large files)
+*.csv.gz
+*.parquet
+*.feather
+*.arrow
+data/raw/
+data/processed/
+
+# Jupyter Notebook outputs
+*.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# R specific
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*.Rproj
+.Rproj.user/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Output files
+output/
+results/
+plots/
+figures/
+
+# Virtual environments
+ml_env/
+venv_ml/
+.conda/
